@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>صيانة وايت وستنجهاوس | خدمة عملاء اصلاح الاجهزة</title>
     <meta name="description" content="مركز صيانة وايت وستنجهاوس في مصر. خدمة إصلاح وصيانة ثلاجات، غسالات، ومجففات وايت وستنجهاوس بأعلى جودة. اتصل الآن برقم الصيانة.">
-    <meta name="keywords" content="صيانة وايت وستنجهاوس, مركز صيانة وايت وستنجهاوس, رقم صيانة وايت وستنجهاوس, إصلاح ثلاجات وايت وستنجهاوس">
+    <meta name="keywords" content="صيانة وايت وستنجهاوس, صيانة ثلاجات وايت وستنجهاوس, صيانة غسالات وايت وستنجهاوس, صيانة ديب فريزر, رقم صيانة وايت وستنجهاوس">
     
     <!-- Open Graph Meta Tags -->
     <meta property="og:title" content="صيانة وايت وستنجهاوس">
@@ -58,6 +58,7 @@
             --accent-color: #ee6c4d;
             --bg-color: #f4f6f8;
             --text-color: #333333;
+            --card-bg: #ffffff;
         }
         * {
             box-sizing: border-box;
@@ -89,32 +90,61 @@
             margin: 2rem auto;
             padding: 0 1rem;
         }
+        .section-title {
+            color: var(--secondary-color);
+            margin: 2rem 0 1rem 0;
+            font-size: 1.8rem;
+            text-align: center;
+            position: relative;
+        }
+        .section-title::after {
+            content: '';
+            display: block;
+            width: 60px;
+            height: 3px;
+            background-color: var(--accent-color);
+            margin: 0.5rem auto 0 auto;
+            border-radius: 2px;
+        }
+        .product-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+            gap: 1.5rem;
+            margin-bottom: 2rem;
+        }
         .card {
-            background: #ffffff;
-            padding: 2.5rem;
+            background: var(--card-bg);
+            padding: 2rem;
             border-radius: 8px;
             box-shadow: 0 4px 15px rgba(0,0,0,0.05);
-            margin-bottom: 1.5rem;
+            border-top: 4px solid var(--secondary-color);
+            transition: transform 0.3s ease;
         }
-        h2 {
+        .card:hover {
+            transform: translateY(-5px);
+        }
+        .card h3 {
             color: var(--secondary-color);
+            margin-bottom: 0.8rem;
+            font-size: 1.3rem;
+        }
+        .card p {
+            font-size: 0.95rem;
+            color: #555;
             margin-bottom: 1rem;
-            font-size: 1.6rem;
-        }
-        ul {
-            list-style: inside disc;
-            margin: 1rem 0;
-        }
-        ul li {
-            margin-bottom: 0.6rem;
-            font-size: 1.1rem;
         }
         .cta-box {
             text-align: center;
-            background: #ffffff;
+            background: var(--card-bg);
             padding: 3rem;
             border-radius: 8px;
             box-shadow: 0 4px 15px rgba(0,0,0,0.05);
+            margin-top: 2rem;
+        }
+        .cta-box h2 {
+            color: var(--secondary-color);
+            margin-bottom: 1rem;
+            font-size: 1.6rem;
         }
         .btn {
             display: inline-block;
@@ -152,19 +182,36 @@
 
     <header>
         <h1>صيانة وايت وستنجهاوس</h1>
-        <p>الخدمة الاحترافية الأولى لصيانة وإصلاح أجهزة وايت وستنجهاوس المنزلية في مصر</p>
+        <p>الخدمة الاحترافية الأولى لصيانة وإصلاح الأجهزة المنزلية في مصر</p>
     </header>
 
     <div class="container">
-        <div class="card">
-            <h2>خدماتنا المتكاملة لصيانة الأجهزة</h2>
-            <p>نحن متخصصون في صيانة وإصلاح أجهزة وايت وستنجهاوس باستخدام أحدث معدات الفحص والصيانة الدقيقة:</p>
-            <ul>
-                <li>صيانة وفحص الثلاجات والديب فريزر وايت وستنجهاوس.</li>
-                <li>إصلاح غسالات الملابس والأطباق بكفاءة عالية وفحص الدوائر الكهربائية.</li>
-                <li>توفير قطع الغيار الأصلية والمطابقة للمواصفات الفنية للأجهزة.</li>
-                <li>خدمة الدعم الفني والصيانة السريعة بجميع مناطق القاهرة والمحافظات.</li>
-            </ul>
+        <h2 class="section-title">أقسام خدمات صيانة أجهزة وايت وستنجهاوس</h2>
+        
+        <div class="product-grid">
+            <!-- سكشن الثلاجات -->
+            <div class="card">
+                <h3>صيانة الثلاجات</h3>
+                <p>فحص وإصلاح أعطال التبريد، تسريب الغاز، التوست، وتغيير كاور الشص وتقفيل الباب بكفاءة عالية وفريق فني متخصص.</p>
+            </div>
+
+            <!-- سكشن الغسالات -->
+            <div class="card">
+                <h3>صيانة الغسالات</h3>
+                <p>إصلاح غسالات الملابس والأطباق، معالجة مشاكل العصر، الطرد، لوحة التحكم الإلكترونية، والاهتزاز وضوضاء التشغيل.</p>
+            </div>
+
+            <!-- سكشن الديب فريزر -->
+            <div class="card">
+                <h3>صيانة الديب فريزر</h3>
+                <p>خدمة دقيقة لمعالجة ضعف التبريد، تكون الثلج الكثيف، أعطال الموتور والكباس لضمان الحفاظ على الأطعمة.</p>
+            </div>
+
+            <!-- سكشن المجففات -->
+            <div class="card">
+                <h3>صيانة المجففات (النشافات)</h3>
+                <p>فحص دوائر التسخين، حساسات الحرارة، ومشاكل عدم تجفيف الملابس بكفاءة مع توفير المكونات الأصلية.</p>
+            </div>
         </div>
 
         <div class="cta-box">
@@ -174,7 +221,7 @@
         </div>
     </div>
 
-    <!-- العنوان وبيانات الـ NAP كاملة جوه الفوتر وتطابق الخريطة بالحرف -->
+    <!-- بيانات الـ NAP كاملة جوه الفوتر وتطابق الخريطة بالحرف -->
     <footer>
         <div class="footer-content">
             <p><strong>النشاط:</strong> صيانة وايت وستنجهاوس</p>
