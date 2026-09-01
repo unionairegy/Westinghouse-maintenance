@@ -165,7 +165,7 @@
             background-color: var(--primary-color);
             color: #ffffff;
             text-align: center;
-            padding: 2.5rem 1rem;
+            padding: 3rem 1rem 2rem 1rem;
             margin-top: 3rem;
         }
         footer .footer-content {
@@ -175,6 +175,19 @@
         footer p {
             margin-bottom: 0.8rem;
             font-size: 1rem;
+        }
+        .map-container {
+            margin-top: 1.5rem;
+            width: 100%;
+            border-radius: 6px;
+            overflow: hidden;
+            box-shadow: 0 4px 10px rgba(0,0,0,0.2);
+        }
+        .map-container iframe {
+            width: 100%;
+            height: 250px;
+            border: 0;
+            display: block;
         }
     </style>
 </head>
@@ -221,13 +234,19 @@
         </div>
     </div>
 
-    <!-- بيانات الـ NAP كاملة جوه الفوتر وتطابق الخريطة بالحرف -->
+    <!-- الفوتر مع بيانات الـ NAP وخريطة جوجل المدمجة -->
     <footer>
         <div class="footer-content">
             <p><strong>النشاط:</strong> صيانة وايت وستنجهاوس</p>
             <p><strong>العنوان الرئيسي:</strong> 3945+Q4F, Al Mintaqah as Sadisah, Nasr City, Cairo Governorate 4452001</p>
             <p><strong>رقم التليفون / خدمة العملاء:</strong> 01131161805</p>
-            <hr style="border: 0; border-top: 1px solid rgba(255,255,255,0.2); margin: 1.5rem 0;">
+            
+            <!-- خريطة جوجل المدمجة لتأكيد الموقع جغرافياً -->
+            <div class="map-container">
+                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3453.5!2d31.2357!3d30.0444!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x0!2zMzDCsDAyJzM5LjgiTiAzMcKwMTQnMDguNSJF!5e0!3m2!1sen!2seg!4v1600000000000!5m2!1sen!2seg" allowfullscreen="" loading="lazy"></iframe>
+            </div>
+
+            <hr style="border: 0; border-top: 1px solid rgba(255,255,255,0.2); margin: 1.5rem 0 1rem 0;">
             <p>جميع الحقوق محفوظة © صيانة وايت وستنجهاوس 2026</p>
         </div>
     </footer>
