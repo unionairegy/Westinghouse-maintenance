@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>صيانة وايت وستنجهاوس | خدمة عملاء اصلاح الاجهزة</title>
-    <meta name="description" content="مركز صيانة وايت وستنجهاوس في مصر. خدمة إصلاح وصيانة ثلاجات، غسالات، ومجففات وايت وستنجهاوس بأعلى جودة وضمان. اتصل الآن برقم الصيانة.">
+    <meta name="description" content="مركز صيانة وايت وستنجهاوس في مصر. خدمة إصلاح وصيانة ثلاجات، غسالات، ومجففات وايت وستنجهاوس بأعلى جودة. اتصل الآن برقم الصيانة.">
     <meta name="keywords" content="صيانة وايت وستنجهاوس, مركز صيانة وايت وستنجهاوس, رقم صيانة وايت وستنجهاوس, إصلاح ثلاجات وايت وستنجهاوس">
     
     <!-- Open Graph Meta Tags -->
@@ -18,8 +18,6 @@
       "@context": "https://schema.org",
       "@type": "LocalBusiness",
       "name": "صيانة وايت وستنجهاوس",
-      "image": "https://westinghouse-maintenance.vercel.app/banner.jpg",
-      "@id": "https://westinghouse-maintenance.vercel.app",
       "url": "https://westinghouse-maintenance.vercel.app",
       "telephone": "+201131161805",
       "address": {
@@ -72,17 +70,19 @@
             color: var(--text-color);
             line-height: 1.6;
         }
-        .hero-banner {
-            width: 100%;
-            background: var(--primary-color);
+        header {
+            background: linear-gradient(135deg, var(--primary-color), var(--secondary-color));
+            color: #ffffff;
+            padding: 3rem 1rem;
             text-align: center;
-            box-shadow: 0 4px 10px rgba(0,0,0,0.1);
         }
-        .hero-banner img {
-            width: 100%;
-            max-width: 100%;
-            height: auto;
-            display: block;
+        header h1 {
+            font-size: 2.5rem;
+            margin-bottom: 0.5rem;
+        }
+        header p {
+            font-size: 1.2rem;
+            opacity: 0.9;
         }
         .container {
             max-width: 900px;
@@ -91,7 +91,7 @@
         }
         .card {
             background: #ffffff;
-            padding: 2rem;
+            padding: 2.5rem;
             border-radius: 8px;
             box-shadow: 0 4px 15px rgba(0,0,0,0.05);
             margin-bottom: 1.5rem;
@@ -99,19 +99,20 @@
         h2 {
             color: var(--secondary-color);
             margin-bottom: 1rem;
-            font-size: 1.5rem;
+            font-size: 1.6rem;
         }
         ul {
             list-style: inside disc;
             margin: 1rem 0;
         }
         ul li {
-            margin-bottom: 0.5rem;
+            margin-bottom: 0.6rem;
+            font-size: 1.1rem;
         }
         .cta-box {
             text-align: center;
             background: #ffffff;
-            padding: 2.5rem;
+            padding: 3rem;
             border-radius: 8px;
             box-shadow: 0 4px 15px rgba(0,0,0,0.05);
         }
@@ -119,11 +120,11 @@
             display: inline-block;
             background-color: var(--accent-color);
             color: #ffffff;
-            padding: 0.8rem 2rem;
+            padding: 1rem 2.5rem;
             border-radius: 4px;
             text-decoration: none;
             font-weight: bold;
-            font-size: 1.2rem;
+            font-size: 1.3rem;
             margin-top: 1rem;
             transition: background 0.3s ease;
         }
@@ -149,15 +150,15 @@
 </head>
 <body>
 
-    <!-- البانر التصميمي -->
-    <div class="hero-banner">
-        <img src="banner.jpg" alt="صيانة وايت وستنجهاوس في مصر">
-    </div>
+    <header>
+        <h1>صيانة وايت وستنجهاوس</h1>
+        <p>الخدمة الاحترافية الأولى لصيانة وإصلاح أجهزة وايت وستنجهاوس المنزلية في مصر</p>
+    </header>
 
     <div class="container">
         <div class="card">
             <h2>خدماتنا المتكاملة لصيانة الأجهزة</h2>
-            <p>نحن متخصصون في التعامل مع كافة الأعطال الفنية والتقنية لأجهزة وايت وستنجهاوس باستخدام أحدث معدات الفحص والصيانة الدقيقة:</p>
+            <p>نحن متخصصون في صيانة وإصلاح أجهزة وايت وستنجهاوس باستخدام أحدث معدات الفحص والصيانة الدقيقة:</p>
             <ul>
                 <li>صيانة وفحص الثلاجات والديب فريزر وايت وستنجهاوس.</li>
                 <li>إصلاح غسالات الملابس والأطباق بكفاءة عالية وفحص الدوائر الكهربائية.</li>
@@ -173,7 +174,7 @@
         </div>
     </div>
 
-    <!-- العنوان وبيانات الـ NAP كاملة جوه الفوتر -->
+    <!-- العنوان وبيانات الـ NAP كاملة جوه الفوتر وتطابق الخريطة بالحرف -->
     <footer>
         <div class="footer-content">
             <p><strong>النشاط:</strong> صيانة وايت وستنجهاوس</p>
