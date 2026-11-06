@@ -290,12 +290,30 @@
             padding: 30px;
             box-shadow: 0 4px 12px rgba(0,0,0,0.03);
             border-right: 5px solid var(--accent-orange);
+            position: relative;
         }
         .content-card h3 {
             font-size: 1.35rem;
             color: var(--brand-blue);
             margin-bottom: 14px;
             font-weight: 800;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+        }
+        .content-card h3 a {
+            font-size: 0.85rem;
+            background: #f1f5f9;
+            color: var(--brand-blue);
+            padding: 4px 10px;
+            border-radius: 4px;
+            text-decoration: none;
+            border: 1px solid #cbd5e1;
+            transition: background 0.2s;
+        }
+        .content-card h3 a:hover {
+            background: var(--brand-blue);
+            color: #fff;
         }
         .content-card p {
             color: #475569;
@@ -587,7 +605,7 @@
         </div>
     </section>
 
-    <!-- 4 Independent Deep Cards Grid (Brand-Targeted Headings) -->
+    <!-- 4 Independent Deep Cards Grid (Brand-Targeted Headings & Linked Icons) -->
     <section class="container">
         <div class="section-title">
             <h2>أقسام الصيانة الفنية لأجهزة وايت وستنجهاوس</h2>
@@ -596,9 +614,12 @@
 
         <div class="cards-grid-4">
             
-            <!-- Card 1: Refrigerators -->
+            <!-- Card 1: Refrigerators (Linked to Kelvinator sub / Hub) -->
             <div class="content-card">
-                <h3><span>❄️</span> صيانة ثلاجات وايت وستنجهاوس</h3>
+                <h3>
+                    <span>❄️</span> صيانة ثلاجات وايت وستنجهاوس
+                    <a href="https://kelvinator.maintenance-eg.net/" title="صيانة كلفينيتور">🌐 تفاصيل التبريد</a>
+                </h3>
                 <p>فحص ميداني شامل ومتخصص لدوائر التبريد في ثلاجات وايت وستنجهاوس الدابل دور والسايد باي سايد:</p>
                 <ul class="fault-list">
                     <li><strong>ضعف تبريد الكابينة السفلية:</strong> فحص بوابات تدفق الهواء البارد واختبار الحساسات الإلكترونية.</li>
@@ -608,9 +629,12 @@
                 </ul>
             </div>
 
-            <!-- Card 2: Washing Machines -->
+            <!-- Card 2: Washing Machines (Linked to Main Hub) -->
             <div class="content-card">
-                <h3><span>⚡</span> صيانة غسالات وايت وستنجهاوس</h3>
+                <h3>
+                    <span>⚡</span> صيانة غسالات وايت وستنجهاوس
+                    <a href="https://maintenance-eg.net/" title="المركز الرئيسي">🌐 الشبكة الرئيسية</a>
+                </h3>
                 <p>دعم فني هندسي لإصلاح غسالات الملابس وايت وستنجهاوس الأوتوماتيك والفوق أوتوماتيك:</p>
                 <ul class="fault-list">
                     <li><strong>حلة الغسالة لا تلف أو الموتور يزن:</strong> فحص مكثف البدء، رولمان البلي، أو سير الحلة الداخلي.</li>
@@ -620,9 +644,12 @@
                 </ul>
             </div>
 
-            <!-- Card 3: Freezers -->
+            <!-- Card 3: Freezers (Linked to Kelvinator sub / Hub) -->
             <div class="content-card">
-                <h3><span>🧊</span> صيانة ديب فريزر وايت وستنجهاوس</h3>
+                <h3>
+                    <span>🧊</span> صيانة ديب فريزر وايت وستنجهاوس
+                    <a href="https://kelvinator.maintenance-eg.net/" title="صيانة كلفينيتور">🌐 قسم التجميد</a>
+                </h3>
                 <p>فحص دقيق لأجهزة الديب فريزر الرأسي والأفقي لضمان استقرار درجات التجميد العميقة:</p>
                 <ul class="fault-list">
                     <li><strong>انخفاض كفاءة التجميد:</strong> اختبار ضغوط الدائرة وكشف التنفيس المجهري باللحامات النحاسية.</li>
@@ -632,9 +659,12 @@
                 </ul>
             </div>
 
-            <!-- Card 4: Dryers -->
+            <!-- Card 4: Dryers (Linked to Main Hub) -->
             <div class="content-card">
-                <h3><span>🔄</span> صيانة مجففات وايت وستنجهاوس</h3>
+                <h3>
+                    <span>🔄</span> صيانة مجففات وايت وستنجهاوس
+                    <a href="https://maintenance-eg.net/" title="المركز الرئيسي">🌐 الخدمات العامة</a>
+                </h3>
                 <p>تشخيص احترافي لأعطال مجففات النشافات للحفاظ على كفاءة تجفيف الملابس وتقليل الاستهلاك:</p>
                 <ul class="fault-list">
                     <li><strong>توقف التسخين أو ضعف التجفيف:</strong> فحص هيتر التسخين الكهربائي والثرموستات الحراري.</li>
@@ -821,9 +851,9 @@
                 <div class="footer-col">
                     <h3>خدمات الصيانة</h3>
                     <ul>
-                        <li><a href="https://maintenance-eg.net/" title="صيانة ثلاجات">صيانة ثلاجات وايت وستنجهاوس</a></li>
-                        <li><a href="https://maintenance-eg.net/" title="صيانة غسالات">صيانة غسالات وايت وستنجهاوس</a></li>
-                        <li><a href="https://maintenance-eg.net/" title="صيانة ديب فريزر">صيانة ديب فريزر</a></li>
+                        <li><a href="https://kelvinator.maintenance-eg.net/" title="صيانة كلفينيتور">صيانة ثلاجات وايت وستنجهاوس</a></li>
+                        <li><a href="https://white-westinghouse.maintenance-eg.net/" title="صيانة غسالات">صيانة غسالات وايت وستنجهاوس</a></li>
+                        <li><a href="https://kelvinator.maintenance-eg.net/" title="صيانة ديب فريزر">صيانة ديب فريزر</a></li>
                     </ul>
                 </div>
                 <div class="footer-col">
